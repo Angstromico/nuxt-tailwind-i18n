@@ -3,10 +3,12 @@ const { setLocale } = useI18n()
 </script>
 
 <template>
-  <div>
+  <div
+    class="bg-black text-white w-screen h-screen flex justify-center items-center"
+  >
     <div>
-      <button @click="setLocale('en')">en</button>
-      <button @click="setLocale('es')">es</button>
+      <button class="mr-2" @click="setLocale('en')">en</button>
+      <button class="ml-2" @click="setLocale('es')">es</button>
       <p>{{ $t('welcome') }}</p>
     </div>
   </div>
